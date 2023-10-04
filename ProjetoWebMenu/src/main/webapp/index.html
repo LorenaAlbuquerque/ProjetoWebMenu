@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Escolha do Menu</h1>
+
+  <!-- Aqui encontramos as opções de entrada -->
+  <div id="entrada">
+    <h2>Escolha uma Entrada:</h2>
+    <ul>
+	<!-- Cada opção de entrada é um item de lista -->
+      <li>
+		<!-- Input do tipo radio para escolha, com uma label associada para apresentar a opção e uma img para representar a imagem da opção. 
+		O mesmo acontece em todas as outras opções, tanto de entrada como de prato principal e sobremesa -->
+        <input type="radio" name="entrada" value="Salada de Folhas Verdes" id="entrada1">
+        <label for="entrada1">Salada de Folhas Verdes</label><br>
+        <img src="imagens/saladaFolhasVerdes.jpeg" alt="Salada de Folhas Verdes" width="150" height="100">
+      </li>
+      <li>
+        <input type="radio" name="entrada" value="Bruschetta" id="entrada2">
+        <label for="entrada2">Bruschetta</label><br>
+        <img src="imagens/bruschetta.jpeg" alt="Bruschetta" width="150" height="100">
+      </li>
+      <li>
+        <input type="radio" name="entrada" value="Chips de maca no forno" id="entrada3">
+        <label for="entrada3">Chips de maca no forno</label><br>
+        <img src="imagens/chipsMaca.jpeg" alt="Chips de maca no forno" width="150" height="100">
+      </li>
+    </ul>
+  </div>
+
+  <div id="pratoPrincipal">
+    <h2>Escolha um Prato Principal:</h2>
+    <ul>
+      <li>
+        <input type="radio" name="pratoPrincipal" value="Capeletti de bufala e alcachofra" id="prato1">
+        <label for="prato1">Capeletti de bufala e alcachofra</label> <br>
+         <img src="imagens/capeletti.jpeg" alt="Capeletti de bufala e alcachofra" width="150" height="100">
+      </li>
+      <li>
+        <input type="radio" name="pratoPrincipal" value="File mignon ao molho de ervas" id="prato2">
+        <label for="prato2">File mignon ao molho de ervas</label> <br>
+         <img src="imagens/fileMignon.jpeg" alt="File mignon ao molho de ervas" width="150" height="100">
+      </li>
+      <li>
+        <input type="radio" name="pratoPrincipal" value="Lagosta ao thermidor" id="prato3">
+        <label for="prato3">Lagosta ao thermidor</label><br>
+         <img src="imagens/lagostaThermidor.jpeg" alt="Lagosta ao thermidor" width="150" height="100">
+      </li>
+      <li>
+        <input type="radio" name="pratoPrincipal" value="File de peixe fresco a belle Meuniere" id="prato4">
+        <label for="prato4">File de peixe fresco a belle Meuniere</label><br>
+         <img src="imagens/peixeBelleMeuniere.jpeg" alt="File de peixe fresco a belle Meuniere" width="150" height="100">
+      </li>
+      <li>
+        <input type="radio" name="pratoPrincipal" value="Stroganoff de frutos do mar" id="prato5">
+        <label for="prato5">Stroganoff de frutos do mar</label><br>
+         <img src="imagens/strogonoffMar.jpeg" alt="Stroganoff de frutos do mar" width="150" height="100">
+      </li>
+    </ul>
+  </div>
+
+  <div id="sobremesa">
+    <h2>Escolha uma Sobremesa:</h2>
+    <ul>
+      <li>
+        <input type="radio" name="sobremesa" value="Petit Gateau" id="sobremesa1">
+        <label for="sobremesa1">Petit Gateau</label><br>
+        <img src="imagens/petitGateau.jpeg" alt="Petit Gateau" width="150" height="100">
+      </li>
+      <li>
+        <input type="radio" name="sobremesa" value="Cheesecake de Frutas Vermelhas" id="sobremesa2">
+        <label for="sobremesa2">Cheesecake de Frutas Vermelhas</label><br>
+        <img src="imagens/cheesecakeFrutasVermelhas.jpeg" alt="Cheesecake de Frutas Vermelhas" width="150" height="100">
+      </li>
+      <li>
+        <input type="radio" name="sobremesa" value="Tiramisu" id="sobremesa3">
+        <label for="sobremesa3">Tiramisu</label><br>
+        <img src="imagens/tiramisu.jpeg" alt="Tiramisu" width="150" height="100">
+      </li>
+    </ul>
+  </div>
+
+  <!-- Botão para mostrar o menu selecionado -->
+  <button onclick="mostrarMenu()">Mostrar Menu</button>
+
+  <!-- Div para mostrar o menu selecionado -->
+  <div id="menuSelecionado" style="display: none;">
+    <h2>Menu Selecionado:</h2>
+    <!-- Lista para mostrar os itens do menu selecionado que serão inseridos-->
+    <ul id="menuItens">
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

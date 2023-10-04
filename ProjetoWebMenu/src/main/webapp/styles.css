@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+/* Estilo geral para o corpo da página */
+body {
+background-color: sandybrown;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+
+/* Estilos para os títulos h1 e h2 */
+h1, h2 {
+  color: darkslategrey;
+}
+
+/* Estilização da lista para tirar os marcadores */
+ul {
+  list-style-type: none;
+}
+
+/* Estilo para os itens da lista */
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para os botões, definindo as dimensões */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Efeito de hover para os botões */
+button:hover {
+  background-color: darkslategrey;
+  color: white;
+  cursor: pointer;
+}
